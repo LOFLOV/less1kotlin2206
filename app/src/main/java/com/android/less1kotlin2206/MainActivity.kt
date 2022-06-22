@@ -1,7 +1,6 @@
 package com.android.less1kotlin2206
-
 import android.os.Bundle
-import android.widget.Button
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,5 +22,10 @@ class MainActivity : AppCompatActivity() {
 
         mainTextView.text = dataClass.text
         secondTextView.text = dataClass.value.toString()
+
+        val human = DataTest("3", 3)
+        val elf = human.copy()
+
+        Log.d("AAA", elf.toString())
     }
 }
